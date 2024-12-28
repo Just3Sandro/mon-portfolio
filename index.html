@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cybersécurité</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800 bg-opacity-90 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold">CyberPortfolio</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Accueil</a>
+                        <a href="#about" class="nav-link">À Propos</a>
+                        <a href="#formation" class="nav-link">Formation</a>
+                        <a href="#projects" class="nav-link">Projets</a>
+                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="mobile-nav-link">Accueil</a>
+                <a href="#about" class="mobile-nav-link">À Propos</a>
+                <a href="#formation" class="mobile-nav-link">Formation</a>
+                <a href="#projects" class="mobile-nav-link">Projets</a>
+                <a href="#blog" class="mobile-nav-link">Blog</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-gray-900 opacity-50"></div>
+        <div class="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-center gap-12">
+            <div class="md:w-1/3 text-center">
+                <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
+                    <img src="assets/images/photo_profil.jpeg" alt="Sandro Marco" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:w-2/3 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-blue-400">Sandro Marco</span> 
+                </h1>
+                <p class="text-xl md:text-2xl mb-8">
+                    Étudiant en cybersécurité à l'école 2600, passionné par la sécurité offensive 
+                    et la gestion des infrastructures critiques
+                </p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#projects" class="btn-primary">
+                        Voir mes projets
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">À Propos</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed">
+                        Depuis mon plus jeune âge, je suis passionné par l'informatique, un domaine qui m'a toujours fasciné par ses possibilités infinies. Mes premières expériences en cybersécurité remontent au collège, lorsque j'ai jailbreaké mon iPod, ce qui a marqué le début de mon aventure dans le monde de la technologie. Par la suite, j'ai exploré le développement web avant de revenir à mes premières amours : la cybersécurité.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        En dehors de l'informatique, je suis un grand passionné de sport. J'ai pratiqué le rugby et le football américain, dont je suis assidûment les matchs de la NFL. Le ski est également une de mes grandes passions, et j'y ai un très bon niveau.
+                    </p>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold text-blue-400">Compétences Techniques</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <ul class="list-disc list-inside space-y-1 text-gray-400">
+                                <li>Pentesting</li>
+                                <li>Administration Linux</li>
+                                <li>Python</li>
+                                <li>Bash Scripting</li>
+                            </ul>
+                            <ul class="list-disc list-inside space-y-1 text-gray-400">
+                                <li>Reverse Engineering</li>
+                                <li>OSINT</li>
+                                <li>Réseaux</li>
+                                <li>Web Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="https://www.root-me.org/Stalobile" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <i class="fas fa-skull text-3xl mb-2"></i>
+                        <h4>Root-Me</h4>
+                        <p class="text-sm text-gray-400 mt-2">1975 points</p>
+                        <p class="text-xs text-gray-500 mt-1">Root-Me est une plateforme en ligne dédiée à l'apprentissage et à la pratique de la cybersécurité. Elle propose une grande variété de défis.  Root-Me m'a énormément aidé à améliorer mes compétences en cybersécurité, me permettant de progresser de manière concrète et efficace dans la résolution de problèmes complexes.</p>
+                    </a>
+                    <a href="https://app.hackthebox.com/profile/1779663" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <i class="fas fa-cube text-3xl mb-2"></i>
+                        <h4>HackTheBox</h4>
+                        <p class="text-xs text-gray-500 mt-1">Hack The Box est une plateforme en ligne spécialisée dans l'apprentissage de la cybersécurité, offrant des défis pratiques dans des domaines tels que le hacking éthique, le reverse engineering, la cryptographie, et la sécurité des réseaux. Avec ses machines virtuelles et ses scénarios réalistes, Hack The Box m'a beaucoup aidé à développer et affiner mes compétences en cybersécurité, en me permettant de travailler sur des situations proches de celles rencontrées en entreprise et de progresser de manière continue.</p>
+                    </a>
+                    <a href="https://github.com/Just3Sandro" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <i class="fab fa-github text-3xl mb-2"></i>
+                        <h4>GitHub</h4>
+                        <p class="text-xs text-gray-500 mt-1">GitHub est une plateforme de développement collaboratif permettant de partager, gérer et versionner des projets logiciels. J'y ai déposé plusieurs de mes projets personnels et professionnels, afin de les mettre en valeur et de faciliter leur partage avec la communauté. Cela me permet également de suivre l’évolution de mes compétences et d’obtenir des retours constructifs d’autres développeurs.</p>               </a>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud text-3xl mb-2"></i>
+                        <h4>CTF Player</h4>
+                        <p class="text-xs text-gray-500 mt-1">Compétitions & Events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Formation</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://www.2600.eu/" target="_blank" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Bachelor Cybersécurité</h3>
+                        <p class="text-gray-400 mb-2">École 2600</p>
+                        <p class="text-gray-500">2023 - Présent</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Sécurité offensive</li>
+                            <li>Administration système</li>
+                            <li>Développement sécurisé</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://42barcelona.com" target="_blank" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Bachelor Cybersécurité</h3>
+                        <p class="text-gray-400 mb-2">École 42 Barcelone</p>
+                        <p class="text-gray-500">2022 - 2024</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Sécurité offensive</li>
+                            <li>Administration système</li>
+                            <li>Développement sécurisé</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://ozenne.mon-ent-occitanie.fr/" target="_blank" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">BTS - Service Informatique aux Organisation</h3>
+                        <p class="text-gray-400 mb-2">Lycée Ozenne - Toulouse</p>
+                        <p class="text-gray-500">2020 - 2022</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Sécurité offensive</li>
+                            <li>Administration système</li>
+                            <li>Développement sécurisé</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/hacking-ethique-le-cours-complet/" target="_blank" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-certificate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Hacking Éthique : Le Cours Complet</h3>
+                        <p class="text-gray-400 mb-2"> Udemy</p>
+                        <p class="text-gray-500">2024</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Sécurité offensive</li>
+                            <li>Administration système</li>
+                            <li>Développement sécurisé</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="#" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-certificate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Certifications</h3>
+                        <p class="text-gray-400 mb-2">En cours d'obtention</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>CompTIA Security+</li>
+                            <li>eJPT</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Mes Projets</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/project1.png" alt="Project 1" class="w-full h-48 object-cover">
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Serveur proxmox</h3>
+                        <p class="text-gray-400">Pendant mon temps libre, j'ai mis en place un laboratoire virtuel sur Proxmox, intégrant un routeur/firewall pfSense. J'ai également mis en place des VLAN pour différents utilisateurs, ainsi que des règles de sécurité avancées et un système de détection d'intrusions avec CrowdSec. Cette expérience m'a permis de déployer des environnements virtualisés, de configurer des réseaux complexes et de mieux comprendre les enjeux liés à la gestion des infrastructures virtuelles.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">Virtualisation</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Sécurité</span>
+                            <span class="tech-tag">Réseaux</span>
+                            <span class="tech-tag">Pfsense</span>
+                            <span class="tech-tag">Crowdsec</span>
+                            <span class="tech-tag">VLAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/project2.webp" alt="CTF ROOTME" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">CTF ROOTME X COMCYBER</h3>
+                        <p class="text-gray-400">J'ai participé au CTF organisé par Root-Me et COMCYBER, couvrant des domaines variés tels que le web, la forensique, la cryptographie, le reverse engineering, la stéganographie et les réseaux. Cet événement m'a offert l'opportunité de mettre en pratique mes compétences en cybersécurité de manière globale. J'ai également rédigé un write-up pour partager les connaissances acquises durant cette expérience.  <br>*cliquer en bas a gauche de l'image pour voir le write-up </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">CTF</span>
+                            <span class="tech-tag">Pentest Web</span>
+                            <span class="tech-tag">Forensics</span>
+                            <span class="tech-tag">Reverse</span>
+                            <span class="tech-tag">Réseaux</span>
+                            <span class="tech-tag">stéganographie</span>
+                            <span class="tech-tag">cryptographie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/project3.png" alt="Web App ITrust" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <a href="https://www.itrust.fr/" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Stage - Développeur full stack ITrust</h3>
+                        <p class="text-gray-400">J'ai développé une application web dynamique pour les clients internes en utilisant ReactJS et une API REST sous Django, en autonomie complète. Ce projet m’a permis de concevoir une interface utilisateur moderne et d'intégrer efficacement le back-end, tout en répondant aux besoins spécifiques des utilisateurs dans un cadre exigeant, avec des contraintes de sécurité et de performance. La gestion de ce projet, avec une durée limitée et serrée, m’a également permis de renforcer mes compétences en gestion de projets techniques concrets.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">Stage</span>
+                            <span class="tech-tag">Web Dev</span>
+                            <span class="tech-tag">Sécurité</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ReactJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/project4.webp" alt="Potager Connecté" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <a href="#" class="text-white hover:text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Potager Connecté</h3>
+                        <p class="text-gray-400">Création d'un système de potager connecté utilisant une carte Arduino. Mise en place de capteurs pour le suivi des conditions environnementales et automatisation de l'arrosage.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Blog</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <img src="assets/images/blog1.jpg" alt="Blog 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Analyse d'une attaque XSS</h3>
+                        <p class="text-gray-400">Étude approfondie des vulnérabilités XSS...</p>
+                        <a href="#" class="inline-block mt-4 text-blue-400 hover:text-blue-300">
+                            Lire plus →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Contact</h2>
+            <div class="max-w-4xl mx-auto mt-12">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <h3 class="text-2xl font-semibold text-blue-400">Me contacter</h3>
+                        <p class="text-gray-400">N'hésitez pas à me contacter pour discuter de projets passionnants ou pour échanger sur la cybersécurité.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-gray-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium">Email</h4>
+                                    <a href="mailto:sandro.marco@ecole2600.com" class="text-gray-400 hover:text-blue-400">sandro.marco@ecole2600.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-linkedin text-gray-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium">LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/sandromar" class="text-gray-400 hover:text-blue-400">linkedin.com/in/sandromar</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-github text-gray-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium">GitHub</h4>
+                                    <a href="https://github.com/Just3Sandro" class="text-gray-400 hover:text-blue-400">github.com/Just3Sandro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Nom</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-800 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-400 text-gray-900 py-2 px-4 rounded-lg font-medium hover:bg-blue-500 transition duration-300">
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p>&copy; 2024 Portfolio Cybersécurité. Tous droits réservés.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/Just3Sandro" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sandromar" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.root-me.org/Stalobile" class="social-link">
+                        <i class="fas fa-skull"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
