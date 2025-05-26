@@ -20,9 +20,9 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#home" class="nav-link">Accueil</a>
                         <a href="#about" class="nav-link">À Propos</a>
+                        <a href="#projects" class="nav-link">Projets</a>
                         <a href="#formation" class="nav-link">Formation</a>
                         <a href="#experience" class="nav-link">Expérience</a>
-                        <a href="#projects" class="nav-link">Projets</a>
                         <a href="#blog" class="nav-link">Blog</a>
                         <a href="#contact" class="nav-link">Contact</a>
                     </div>
@@ -41,9 +41,9 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#home" class="mobile-nav-link">Accueil</a>
                 <a href="#about" class="mobile-nav-link">À Propos</a>
+                <a href="#projects" class="mobile-nav-link">Projets</a>
                 <a href="#formation" class="mobile-nav-link">Formation</a>
                 <a href="#experience" class="mobile-nav-link">Expérience</a>
-                <a href="#projects" class="mobile-nav-link">Projets</a>
                 <a href="#blog" class="mobile-nav-link">Blog</a>
                 <a href="#contact" class="mobile-nav-link">Contact</a>
             </div>
@@ -51,11 +51,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative">
+    <section id="home" class="min-h-[50vh] pt-32 pb-10 flex items-center justify-center relative">
         <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-gray-900 opacity-50"></div>
         <div class="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-center gap-12">
             <div class="md:w-1/3 text-center">
-                <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
+                <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
                     <img src="assets/images/photo_profil.jpeg" alt="Sandro Marco" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -64,8 +64,7 @@
                     <span class="text-blue-400">Sandro Marco</span> 
                 </h1>
                 <p class="text-xl md:text-2xl mb-8">
-                    Étudiant en cybersécurité à l'école 2600, passionné par la sécurité offensive 
-                    et la gestion des infrastructures critiques.
+                    Étudiant en cybersécurité à l'école 2600, passionné par l'informatique.
                 </p>
                 <div class="flex justify-center md:justify-start gap-4">
                     <a href="#projects" class="btn-primary">
@@ -82,16 +81,16 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-900">
         <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">À Propos</h2>
+            <h2 class=" mb-8 text-4xl font-bold text-center text-blue-400">À Propos</h2>
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-6">
                     <p class="text-lg leading-relaxed">
                         Depuis mon plus jeune âge, je suis passionné par l'informatique, un domaine qui m'a toujours fasciné par ses possibilités infinies. Mes premières expériences en cybersécurité remontent au collège, lorsque j'ai jailbreaké mon iPod, ce qui a marqué le début de mon aventure dans le monde de la technologie. Par la suite, j'ai exploré le développement web avant de revenir à mes premières amours : la cybersécurité.
                     </p>
                     <p class="text-lg leading-relaxed">
-                        En dehors de l'informatique, je suis un grand passionné de sport. J'ai pratiqué le rugby et le football américain, dont je suis assidûment les matchs de la NFL. Le ski est également une de mes grandes passions.
+                        En dehors de l'informatique, je suis un grand passionné de sport. J'ai pratiqué le rugby et le football américain, dont je suis assidûment les matchs de la NFL. Je fais également du CrossFit, une discipline que j'apprécie pour son intensité et sa diversité.
                     </p>
-                    <div class="space-y-2">
+                    <!-- <div class="space-y-2">
                         <h3 class="text-xl font-semibold text-blue-400">Compétences Techniques</h3>
                         <div class="grid grid-cols-2 gap-4">
                             <ul class="list-disc list-inside space-y-1 text-gray-400">
@@ -107,24 +106,36 @@
                                 <li>Web Security</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="grid grid-cols-2 gap-4">
-                    <a href="https://www.root-me.org/Stalobile" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
-                        <i class="fas fa-skull text-3xl mb-2"></i>
+                    <div class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <i class="fas fa-skull text-4xl mb-2"></i>
                         <h4>Root-Me</h4>
-                        <p class="text-sm text-gray-400 mt-2">2215 points</p>
-                        <p class="text-xs text-gray-500 mt-1">Root-Me est une plateforme en ligne dédiée à l'apprentissage et à la pratique de la cybersécurité. Elle propose une grande variété de défis.  Root-Me m'a énormément aidé à améliorer mes compétences en cybersécurité, me permettant de progresser de manière concrète et efficace dans la résolution de problèmes complexes.</p>
-                    </a>
-                    <a href="https://app.hackthebox.com/profile/1779663" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <p class="text-lg text-gray-400 mt-3">2215 points</p>
+                        <a href="https://www.root-me.org/Stalobile" class="text-white hover:text-blue-400">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <!-- <p class="text-xs text-gray-500 mt-1"></p> -->
+                    </div>
+                    <div class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
                         <i class="fas fa-cube text-3xl mb-2"></i>
                         <h4>HackTheBox</h4>
-                        <p class="text-xs text-gray-500 mt-1">Hack The Box est une plateforme en ligne spécialisée dans l'apprentissage de la cybersécurité, offrant des défis pratiques dans des domaines tels que le hacking éthique, le reverse engineering, la cryptographie, et la sécurité des réseaux. Avec ses machines virtuelles et ses scénarios réalistes, Hack The Box m'a beaucoup aidé à développer et affiner mes compétences en cybersécurité, en me permettant de travailler sur des situations proches de celles rencontrées en entreprise et de progresser de manière continue.</p>
-                    </a>
-                    <a href="https://github.com/Just3Sandro" target="_blank" class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
+                        <p class="text-lg text-gray-400 mt-3">Mon profile HackTheBox</p>
+                        <a href="https://app.hackthebox.com/profile/1779663" class="text-white hover:text-blue-400">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <!-- <p class="text-xs text-gray-500 mt-1">Hack The Box est une plateforme en ligne spécialisée dans l'apprentissage de la cybersécurité, offrant des défis pratiques dans des domaines tels que le hacking éthique, le reverse engineering, la cryptographie, et la sécurité des réseaux. Avec ses machines virtuelles et ses scénarios réalistes, Hack The Box m'a beaucoup aidé à développer et affiner mes compétences en cybersécurité, en me permettant de travailler sur des situations proches de celles rencontrées en entreprise et de progresser de manière continue.</p> -->
+                    </div>
+                    <div class="skill-card hover:border-blue-400 hover:border-2 transition-all duration-300">
                         <i class="fab fa-github text-3xl mb-2"></i>
                         <h4>GitHub</h4>
-                        <p class="text-xs text-gray-500 mt-1">GitHub est une plateforme de développement collaboratif permettant de partager, gérer et versionner des projets logiciels. J'y ai déposé plusieurs de mes projets personnels et professionnels, afin de les mettre en valeur et de faciliter leur partage avec la communauté. Cela me permet également de suivre l’évolution de mes compétences et d’obtenir des retours constructifs d’autres développeurs.</p>               </a>
+                        <p class="text-lg text-gray-400 mt-3">Mes projets</p>
+                        <a href="https://github.com/Just3Sandro" class="text-white hover:text-blue-400">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <!-- <p class="text-xs text-gray-500 mt-1">GitHub est une plateforme de développement collaboratif permettant de partager, gérer et versionner des projets logiciels. J'y ai déposé plusieurs de mes projets personnels et professionnels, afin de les mettre en valeur et de faciliter leur partage avec la communauté. Cela me permet également de suivre l’évolution de mes compétences et d’obtenir des retours constructifs d’autres développeurs.</p>  -->
+                    </div> 
                     <div class="skill-card">
                         <i class="fas fa-cloud text-3xl mb-2"></i>
                         <h4>CTF Player</h4>
@@ -135,202 +146,112 @@
         </div>
     </section>
 
-    <!-- Formation Section -->
-    <section id="formation" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Formation</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="https://www.2600.eu/" target="_blank" class="block">
-                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
-                        <div class="text-blue-400 mb-4">
-                            <i class="fas fa-graduation-cap text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Master en Cybersécurité</h3>
-                        <p class="text-gray-400 mb-2">École 2600</p>
-                        <p class="text-gray-500">2023 - Présent</p>
-                        <ul class="mt-4 text-gray-400 list-disc list-inside">
-                            <li>Une école 100% cyber: Pas d’excellence sans maîtriser les fondamentaux.</li>
-                            <li>Pratiques défensives et offensives. Sécurité défensive Blue Team (SOC, ML, DFIR…) et sécurité offensive Red Team (pentest, reverse, malware …)</li>
-                            <li>Gouvernance, conformité, conseil. Politique de cybersécurité, SMSI, analyse de risque et conformité (EBIOS, ISO 27k…)</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <a href="https://42barcelona.com" target="_blank" class="block">
-                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
-                        <div class="text-blue-400 mb-4">
-                            <i class="fas fa-graduation-cap text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Formation Informatique</h3>
-                        <p class="text-gray-400 mb-2">École 42 Barcelone</p>
-                        <p class="text-gray-500">2022 - 2024</p>
-                        <ul class="mt-4 text-gray-400 list-disc list-inside">
-                            <li>Enseignement sous forme de projet (pas de cours, pas de prof), Nombreux projets en C.</li>
-                            <li>Evaluation par les paires (peer-to-peer learning). Travail d’équipe mis en avant.</li>
-                            <li>Immersion dans un environnement international.</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <a href="https://ozenne.mon-ent-occitanie.fr/" target="_blank" class="block">
-                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
-                        <div class="text-blue-400 mb-4">
-                            <i class="fas fa-graduation-cap text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">BTS - Service Informatique aux Organisation</h3>
-                        <p class="text-gray-400 mb-2">Lycée Ozenne - Toulouse</p>
-                        <p class="text-gray-500">2020 - 2022</p>
-                        <ul class="mt-4 text-gray-400 list-disc list-inside">
-                            <li>Développement d'applications informatiques en utilisant des langages comme Java, Python et PHP, afin de répondre aux besoins des entreprises.</li>
-                            <li>Formation à l'administration des réseaux, à la gestion des infrastructures et à la sécurité des systèmes d'information.</li>
-                            <li>Gestion de projets informatiques, de la conception à la mise en production, en travaillant en équipe et avec des outils professionnels.</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <a href="https://www.udemy.com/course/hacking-ethique-le-cours-complet/" target="_blank" class="block">
-                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
-                        <div class="text-blue-400 mb-4">
-                            <i class="fas fa-certificate text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Hacking Éthique : Le Cours Complet</h3>
-                        <p class="text-gray-400 mb-2"> Udemy</p>
-                        <p class="text-gray-500">2024</p>
-                        <ul class="mt-4 text-gray-400 list-disc list-inside">
-                            <li>Premier pas dans le pentest découverte des premiers outils: Kali, burpsuite, metasploit.</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <!-- <a href="#" class="block">
-                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
-                        <div class="text-blue-400 mb-4">
-                            <i class="fas fa-certificate text-3xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Certifications</h3>
-                        <p class="text-gray-400 mb-2">En cours d'obtention</p>
-                        <ul class="mt-4 text-gray-400 list-disc list-inside">
-                            <li>CompTIA Security+</li>
-                            <li>eJPT</li>
-                        </ul>
-                    </div>
-                </a> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Expérience Professionnelle</h2>
-            <div class="space-y-8">           
-                <!-- Experience Item 1 -->
-                <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                        <h3 class="text-xl font-semibold text-blue-400">Travail étudiant</h3>
-                        <div class="text-gray-400">2024</div>
-                    </div>
-                    <div class="text-gray-300 mb-2">Server NORDNORD</div>
-                    <!--<ul class="list-disc list-inside text-gray-400 space-y-2">-->
-                        <p>Job étudiant au restaurant Le NordNord, j'ai développé de solides compétences en contact client, en veillant à offrir un service rapide et de qualité. La pression était constante, car il fallait éviter de faire attendre les clients tout en portant de gros plateaux. J'avais en charge la gestion d'une terrasse avec une vingtaine de tables, une expérience formatrice et intense qui m'a appris à travailler sous pression et à m'organiser efficacement.</p>
-                        
-                   <!-- </ul>-->
-                </div>
-                <!-- Experience Item 2 -->
-                <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                        <h3 class="text-xl font-semibold text-blue-400">Stage Développeur Full Stack</h3>
-                        <div class="text-gray-400">2023</div>
-                    </div>
-                    <div class="text-gray-300 mb-2">Stage crouzil boisson</div>
-                   <!--  <ul class="list-disc list-inside text-gray-400 space-y-2">-->
-                        <p>Lors de mon second stage de BTS chez Crouzil Boisson, j'ai créé un site web de A à Z, en organisant moi-même l'ensemble du projet. Cette expérience a été très formatrice, tant sur le plan de l'organisation que sur la gestion de projet. J'ai également appris à expliquer des concepts techniques de manière claire et accessible à des personnes non techniques.</p>
-                   <!--  </ul>-->
-                </div>
-                <!-- Experience Item 3 -->
-                <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                        <h3 class="text-xl font-semibold text-blue-400">Stage Développeur Full Stack</h3>
-                        <div class="text-gray-400">2022</div>
-                    </div>
-                    <div class="text-gray-300 mb-2">ITrust - Paris, France</div>
-                     <!--<ul class="list-disc list-inside text-gray-400 space-y-2"> -->
-                        <p>Lors de mon premier stage chez iTrust, durant ma première année de BTS, j'ai eu une expérience formidable en tant que développeur full-stack. Ma mission principale était de produire du code sécurisé, en prenant en compte les enjeux de cybersécurité. J'ai travaillé en équipe, avec des objectifs clairs et des délais bien définis, tout en découvrant la méthode agile pour la gestion des projets</p>
-                     <!--</ul> -->
-                </div>
-
-                <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                        <h3 class="text-xl font-semibold text-blue-400">Stage d'observation 3ème</h3>
-                        <div class="text-gray-400">2016</div>
-                    </div>
-                    <div class="text-gray-300 mb-2">Salle des marchés EDF</div>
-                   <!--  <ul class="list-disc list-inside text-gray-400 space-y-2">-->
-                        <p>Lors de mon stage d'observation de 3e à la salle des marchés d'EDF, j'ai pu découvrir l'environnement dynamique du métier de trader, qui m'attirait beaucoup à l'époque. Bien que ce stage fût court, il a été très intéressant de voir comment une grande entreprise fonctionne au quotidien et comment les décisions sont prises dans un secteur aussi stratégique. Cette expérience m'a donné un aperçu précieux du monde du travail.</p>
-                   <!--  </ul>-->
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
-    <section id="projects" class="py-20">
+    <section id="projects" class="py-20 ">
         <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Mes Projets</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project Card 1 -->
-                <div class="project-card">
+            <h2 class=" mb-8 text-4xl font-bold text-center text-blue-400">Mes Projets</h2>
+            <!-- Projets principaux -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Projet principal 1 -->
+                <div class="project-card transform hover:scale-105 transition-all duration-300">
                     <div class="relative overflow-hidden">
                         <a href="https://www.proxmox.com/en/" target="_blank">
-                            <img src="assets/images/project1.png" alt="Project 1" class="w-full h-48 object-cover">
-                        </a> 
-                        <!-- <div class="project-overlay">
-                            <a href="#" class="text-white hover:text-blue-400">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="#" class="text-white hover:text-blue-400">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div> -->
-                    </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Serveur proxmox</h3>
-                        <p class="text-gray-400">Pendant mon temps libre, j'ai mis en place un laboratoire virtuel sur Proxmox, intégrant un routeur/firewall pfSense. J'ai également mis en place des VLAN pour différents utilisateurs, ainsi que des règles de sécurité avancées et un système de détection d'intrusions avec CrowdSec. Cette expérience m'a permis de déployer des environnements virtualisés, de configurer des réseaux complexes et de mieux comprendre les enjeux liés à la gestion des infrastructures virtuelles.</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="tech-tag">Virtualisation</span>
-                            <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">Sécurité</span>
-                            <span class="tech-tag">Réseaux</span>
-                            <span class="tech-tag">Pfsense</span>
-                            <span class="tech-tag">Crowdsec</span>
-                            <span class="tech-tag">VLAN</span>
+                            <img src="assets/images/project1.png" alt="Project 1" class="w-full h-64 object-cover">
+                        </a>
+                        
+                        
+                        <div class="p-6 bg-gray-800">
+                            <h3 class="text-xl font-bold mb-2 text-blue-400">Infrastructure Virtuelle</h3>
+                            <p class="text-gray-300 mb-4">Pendant mon temps libre, j'ai mis en place un laboratoire virtuel sur <b>Proxmox</b>, intégrant un routeur/firewall <b>pfSense</b>. J'ai également mis en place des <b>VLAN</b> pour différents utilisateurs, ainsi que des règles de sécurité avancées et un système de détection d'intrusions avec <b>CrowdSec</b>. Cette expérience m'a permis de déployer des environnements virtualisés, de configurer des réseaux complexes et de mieux comprendre les enjeux liés à la gestion des infrastructures virtuelles.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Virtualisation</span>
+                                <span class="tech-tag">Linux</span>
+                                <span class="tech-tag">Sécurité</span>
+                                <span class="tech-tag">Réseaux</span>
+                                <span class="tech-tag">Pfsense</span>
+                                <span class="tech-tag">Crowdsec</span>
+                                <span class="tech-tag">VLAN</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card">
+                <!-- Projet principal 2 -->
+                <div class="project-card transform hover:scale-105 transition-all duration-300">
                     <div class="relative overflow-hidden">
                         <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" target="_blank">
-                            <img src="assets/images/project2.webp" alt="CTF ROOTME" class="w-full h-48 object-cover">
+                            <img src="assets/images/project2.webp" alt="CTF ROOTME" class="w-full h-64 object-cover">
                         </a>
-                        <div class="project-overlay">
+                        
+                        
+                        <div class="p-6 bg-gray-800">
+                            <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" class="text-white hover:text-blue-400">
+                            </a>
+                            <h3 class="text-xl font-bold mb-2 text-blue">CTF ROOTME X COMCYBER</h3>
+                            <p class="text-gray-300 mb-4">J'ai participé au <b>CTF</b> organisé par <b>Root-Me</b> et <b>COMCYBER</b>, couvrant des domaines variés tels que le web, la forensique, la cryptographie, le reverse engineering, la stéganographie et les réseaux. Cet événement m'a offert l'opportunité de mettre en pratique mes compétences en cybersécurité de manière globale. J'ai également rédigé un write-up pour partager les connaissances acquises durant cette expérience.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">CTF</span>
+                                <span class="tech-tag">Pentest Web</span>
+                                <span class="tech-tag">Forensics</span>
+                                <span class="tech-tag">Reverse</span>
+                                <span class="tech-tag">Réseaux</span>
+                                <span class="tech-tag">stéganographie</span>
+                                <span class="tech-tag">cryptographie</span>
+                            </div>
                             <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" class="text-white hover:text-blue-400">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+            <!-- Autres projets -->
+            <h3 class="text-2xl font-bold mb-6 text-center text-gray-400">Autres Projets</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+                
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/bwt.png" alt="BlueWhiteThreat" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <!-- <a href="https://github.com/Just3Sandro/BlueWhiteThreat" class="text-white hover:text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </a> -->
+                        </div>
+                    </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">CTF ROOTME X COMCYBER</h3>
-                        <p class="text-gray-400">J'ai participé au CTF organisé par Root-Me et COMCYBER, couvrant des domaines variés tels que le web, la forensique, la cryptographie, le reverse engineering, la stéganographie et les réseaux. Cet événement m'a offert l'opportunité de mettre en pratique mes compétences en cybersécurité de manière globale. J'ai également rédigé un write-up pour partager les connaissances acquises durant cette expérience.</p>
+                        <h3 class="text-xl font-semibold mb-2">BlueWhiteThreat</h3>
+                        <p class="text-gray-400">BlueWhiteThreat est une plateforme de Cyber Threat Intelligence (CTI) développée avec pour ambition de devenir la référence en matière d’actualité et d’analyse des cyberattaques ciblant la France.
+                            Conçue en Go, elle intègre un crawler et un scraper performants, capables d’agréger en temps réel des données issues de sources ouvertes (OSINT). Ces données sont ensuite structurées et stockées dans une base NoSQL, afin d’offrir une consultation rapide et pertinente des incidents en cours ou passés.
+                            La solution est conteneurisée avec Docker pour assurer une déployabilité facile, scalable et portable.</p>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="tech-tag">CTF</span>
-                            <span class="tech-tag">Pentest Web</span>
-                            <span class="tech-tag">Forensics</span>
-                            <span class="tech-tag">Reverse</span>
-                            <span class="tech-tag">Réseaux</span>
-                            <span class="tech-tag">stéganographie</span>
-                            <span class="tech-tag">cryptographie</span>
+                            <span class="tech-tag">GO</span>
+                            <span class="tech-tag">DOCKER</span>
+                            <span class="tech-tag">NoSQL</span>
+                            <span class="tech-tag">Tor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/elk.webp" alt="ELK PRTG" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <a href="https://docs.google.com/document/d/1ottXrjkeXgeDioGscvLd5Bca4qeFx6YWcGBHsD1QMm4/edit?usp=sharing" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">ELK/PRTG</h3>
+                        <p class="text-gray-400">Ce projet vise à mettre en place une infrastructure de supervision complète combinant la puissance de PRTG Network Monitor pour la surveillance en temps réel des équipements réseau et serveurs, avec la stack ELK (Elasticsearch, Logstash, Kibana) pour l’analyse centralisée des logs et la corrélation d’événements.
+                            PRTG assure une visibilité instantanée de la santé du système (bande passante, services, latence, etc.), tandis qu’ELK permet de détecter des comportements anormaux via des dashboards dynamiques et des requêtes personnalisées.
+                            L’intégration des deux outils permet une meilleure réactivité face aux incidents, une vision unifiée de l’infrastructure, et un support renforcé pour les enquêtes de sécurité (SIEM-like).</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">elasticsearch</span>
+                            <span class="tech-tag">logstash</span>
+                            <span class="tech-tag">kibana</span>
+                            <span class="tech-tag">PRTG</span>
+                            <span class="tech-tag">Linux</span>
                         </div>
                     </div>
                 </div>
@@ -359,15 +280,38 @@
                         </div>
                     </div>
                 </div>
-
+                
+                <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/projet6.png" alt="Anisble/Docker/Python" class="w-full h-48 object-cover">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Just3Sandro/AnsibleDockerFlask" class="text-white hover:text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Anisble/Docker/Python</h3>
+                        <p class="text-gray-400">Passionné par Docker depuis longtemps, j’ai récemment découvert Ansible et son potentiel en automatisation. Pour approfondir mes connaissances, j’ai décidé de créer un projet complet d’infrastructure sur GNS3, en simulant un environnement proche de celui d’une entreprise. L’objectif était de déployer une application Flask avec une base de données PostgreSQL, tout en automatisant l’installation et la configuration des serveurs avec Ansible. Le projet inclut également un réseau virtualisé avec Mikrotik, permettant de gérer la connectivité entre les différentes machines. Grâce à ce projet, j’ai pu expérimenter l’automatisation du déploiement, la gestion des conteneurs Docker sur plusieurs machines et la configuration réseau avancée. Une excellente expérience qui m’a permis d’allier DevOps, virtualisation et orchestration dans un environnement réaliste !</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">ANSIBLE</span>
+                            <span class="tech-tag">DOCKER</span>
+                            <span class="tech-tag">PYTHON</span>
+                            <span class="tech-tag">RESEAU</span>
+                            <span class="tech-tag">GNS3</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">WEB</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project Card 4 -->
                 <div class="project-card">
                     <div class="relative overflow-hidden">
                         <img src="assets/images/project4.webp" alt="Potager Connecté" class="w-full h-48 object-cover">
                         <div class="project-overlay">
-                            <a href="#" class="text-white hover:text-blue-400">
+                            <!-- <a href="#" class="text-white hover:text-blue-400">
                                 <i class="fab fa-github"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <div class="p-4">
@@ -402,29 +346,147 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/images/projet6.png" alt="Potager Connecté" class="w-full h-48 object-cover">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Just3Sandro/AnsibleDockerFlask" class="text-white hover:text-blue-400">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+
+            </div>
+        </div>
+    </section>
+
+ <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class=" mb-8 text-4xl font-bold text-center text-blue-400">Expérience Professionnelle</h2>
+            <div class="space-y-8">           
+                <!-- Experience Item 1 -->
+                <!-- <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Travail étudiant</h3>
+                        <div class="text-gray-400">2024</div>
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">Anisble/Docker/Python</h3>
-                        <p class="text-gray-400">Passionné par Docker depuis longtemps, j’ai récemment découvert Ansible et son potentiel en automatisation. Pour approfondir mes connaissances, j’ai décidé de créer un projet complet d’infrastructure sur GNS3, en simulant un environnement proche de celui d’une entreprise. L’objectif était de déployer une application Flask avec une base de données PostgreSQL, tout en automatisant l’installation et la configuration des serveurs avec Ansible. Le projet inclut également un réseau virtualisé avec Mikrotik, permettant de gérer la connectivité entre les différentes machines. Grâce à ce projet, j’ai pu expérimenter l’automatisation du déploiement, la gestion des conteneurs Docker sur plusieurs machines et la configuration réseau avancée. Une excellente expérience qui m’a permis d’allier DevOps, virtualisation et orchestration dans un environnement réaliste !</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="tech-tag">ANSIBLE</span>
-                            <span class="tech-tag">DOCKER</span>
-                            <span class="tech-tag">PYTHON</span>
-                            <span class="tech-tag">RESEAU</span>
-                            <span class="tech-tag">GNS3</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">WEB</span>
-                        </div>
+                    <div class="text-gray-300 mb-2">Server NORDNORD</div>
+                    <!--<ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <p>Job étudiant au restaurant Le NordNord, j'ai développé de solides compétences en contact client, en veillant à offrir un service rapide et de qualité. La pression était constante, car il fallait éviter de faire attendre les clients tout en portant de gros plateaux. J'avais en charge la gestion d'une terrasse avec une vingtaine de tables, une expérience formatrice et intense qui m'a appris à travailler sous pression et à m'organiser efficacement.</p>
+                        
+                <!-- </ul>
+                </div> -->
+                <!-- Experience Item 2 -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Stage Développeur Full Stack</h3>
+                        <div class="text-gray-400">2023</div>
                     </div>
+                    <div class="text-gray-300 mb-2">Stage crouzil boisson</div>
+                <!--  <ul class="list-disc list-inside text-gray-400 space-y-2">-->
+                        <p>Lors de mon second stage de BTS chez Crouzil Boisson, j'ai créé un site web de A à Z, en organisant moi-même l'ensemble du projet. Cette expérience a été très formatrice, tant sur le plan de l'organisation que sur la gestion de projet. J'ai également appris à expliquer des concepts techniques de manière claire et accessible à des personnes non techniques.</p>
+                <!--  </ul>-->
                 </div>
+                <!-- Experience Item 3 -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Stage Développeur Full Stack</h3>
+                        <div class="text-gray-400">2022</div>
+                    </div>
+                    <div class="text-gray-300 mb-2">ITrust - Paris, France</div>
+                    <!--<ul class="list-disc list-inside text-gray-400 space-y-2"> -->
+                        <p>Lors de mon premier stage chez iTrust, durant ma première année de BTS, j'ai eu une expérience formidable en tant que développeur full-stack. Ma mission principale était de produire du code sécurisé, en prenant en compte les enjeux de cybersécurité. J'ai travaillé en équipe, avec des objectifs clairs et des délais bien définis, tout en découvrant la méthode agile pour la gestion des projets</p>
+                    <!--</ul> -->
+                </div>
+
+                <!-- <div class="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-400">Stage d'observation 3ème</h3>
+                        <div class="text-gray-400">2016</div>
+                    </div>
+                    <div class="text-gray-300 mb-2">Salle des marchés EDF</div>
+                <!--  <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <p>Lors de mon stage d'observation de 3e à la salle des marchés d'EDF, j'ai pu découvrir l'environnement dynamique du métier de trader, qui m'attirait beaucoup à l'époque. Bien que ce stage fût court, il a été très intéressant de voir comment une grande entreprise fonctionne au quotidien et comment les décisions sont prises dans un secteur aussi stratégique. Cette expérience m'a donné un aperçu précieux du monde du travail.</p>
+                <!--  </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="mb-8 text-4xl font-bold text-center text-blue-400">Formation</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://www.2600.eu/" target="_blank" class="block">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Master en Cybersécurité</h3>
+                        <p class="text-gray-400 mb-2">École 2600</p>
+                        <p class="text-gray-500">2023 - Présent</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Une école 100% cyber: Pas d’excellence sans maîtriser les fondamentaux.</li>
+                            <li>Pratiques défensives et offensives. Sécurité défensive Blue Team (SOC, ML, DFIR…) et sécurité offensive Red Team (pentest, reverse, malware …)</li>
+                            <li>Gouvernance, conformité, conseil. Politique de cybersécurité, SMSI, analyse de risque et conformité (EBIOS, ISO 27k…)</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://42barcelona.com" target="_blank" class="block">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Formation Informatique</h3>
+                        <p class="text-gray-400 mb-2">École 42 Barcelone</p>
+                        <p class="text-gray-500">2022 - 2024</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Enseignement sous forme de projet (pas de cours, pas de prof), Nombreux projets en C.</li>
+                            <li>Evaluation par les paires (peer-to-peer learning). Travail d’équipe mis en avant.</li>
+                            <li>Immersion dans un environnement international.</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://ozenne.mon-ent-occitanie.fr/" target="_blank" class="block">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">BTS - Service Informatique aux Organisation</h3>
+                        <p class="text-gray-400 mb-2">Lycée Ozenne - Toulouse</p>
+                        <p class="text-gray-500">2020 - 2022</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Développement d'applications informatiques en utilisant des langages comme Java, Python et PHP, afin de répondre aux besoins des entreprises.</li>
+                            <li>Formation à l'administration des réseaux, à la gestion des infrastructures et à la sécurité des systèmes d'information.</li>
+                            <li>Gestion de projets informatiques, de la conception à la mise en production, en travaillant en équipe et avec des outils professionnels.</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/hacking-ethique-le-cours-complet/" target="_blank" class="block">
+                    <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-certificate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Hacking Éthique : Le Cours Complet</h3>
+                        <p class="text-gray-400 mb-2"> Udemy</p>
+                        <p class="text-gray-500">2024</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>Premier pas dans le pentest découverte des premiers outils: Kali, burpsuite, metasploit.</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- <a href="#" class="block">
+                    <div class="bg-gray-900 rounded-lg p-6 shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-400 mb-4">
+                            <i class="fas fa-certificate text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Certifications</h3>
+                        <p class="text-gray-400 mb-2">En cours d'obtention</p>
+                        <ul class="mt-4 text-gray-400 list-disc list-inside">
+                            <li>CompTIA Security+</li>
+                            <li>eJPT</li>
+                        </ul>
+                    </div>
+                </a> -->
             </div>
         </div>
     </section>
@@ -432,7 +494,7 @@
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-gray-800">
         <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Veille</h2>
+            <h2 class=" mb-8 text-4xl font-bold text-center text-blue-400">Veille</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Blog Card 1 -->
                 <div class="blog-card">
@@ -466,7 +528,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20">
         <div class="container mx-auto px-4">
-            <h2 class="section-title mb-8 text-4xl font-bold text-center text-blue-400">Contact</h2>
+            <h2 class=" mb-8 text-4xl font-bold text-center text-blue-400">Contact</h2>
             <div class="max-w-4xl mx-auto mt-12">
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="space-y-8">
@@ -551,3 +613,61 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+<!-- Project Card 1 -->
+                <!-- <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <a href="https://www.proxmox.com/en/" target="_blank">
+                            <img src="assets/images/project1.png" alt="Project 1" class="w-full h-48 object-cover">
+                        </a> 
+                        <!-- <div class="project-overlay">
+                            <a href="#" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Serveur proxmox</h3>
+                        <p class="text-gray-400">Pendant mon temps libre, j'ai mis en place un laboratoire virtuel sur Proxmox, intégrant un routeur/firewall pfSense. J'ai également mis en place des VLAN pour différents utilisateurs, ainsi que des règles de sécurité avancées et un système de détection d'intrusions avec CrowdSec. Cette expérience m'a permis de déployer des environnements virtualisés, de configurer des réseaux complexes et de mieux comprendre les enjeux liés à la gestion des infrastructures virtuelles.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">Virtualisation</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Sécurité</span>
+                            <span class="tech-tag">Réseaux</span>
+                            <span class="tech-tag">Pfsense</span>
+                            <span class="tech-tag">Crowdsec</span>
+                            <span class="tech-tag">VLAN</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project Card 2 -->
+                <!-- <div class="project-card">
+                    <div class="relative overflow-hidden">
+                        <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" target="_blank">
+                            <img src="assets/images/project2.webp" alt="CTF ROOTME" class="w-full h-48 object-cover">
+                        </a>
+                        <div class="project-overlay">
+                            <a href="https://medium.com/@sandro.marco/ctf-comcyber-x-root-me-pro-4ad3f242abe5" class="text-white hover:text-blue-400">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">CTF ROOTME X COMCYBER</h3>
+                        <p class="text-gray-400">J'ai participé au CTF organisé par Root-Me et COMCYBER, couvrant des domaines variés tels que le web, la forensique, la cryptographie, le reverse engineering, la stéganographie et les réseaux. Cet événement m'a offert l'opportunité de mettre en pratique mes compétences en cybersécurité de manière globale. J'ai également rédigé un write-up pour partager les connaissances acquises durant cette expérience.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tech-tag">CTF</span>
+                            <span class="tech-tag">Pentest Web</span>
+                            <span class="tech-tag">Forensics</span>
+                            <span class="tech-tag">Reverse</span>
+                            <span class="tech-tag">Réseaux</span>
+                            <span class="tech-tag">stéganographie</span>
+                            <span class="tech-tag">cryptographie</span>
+                        </div>
+                    </div>
+                </div> -->
